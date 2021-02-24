@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_name_text"
-        android:onClick="startMode"/>
+        android:onClick="startMode1"/>
 
     <Button
         android:id="@+id/mode_2_btn"
@@ -51,7 +51,8 @@
         android:text="@string/mode_2_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mode_1_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/mode_1_btn"
+        android:onClick="startMode2"/>
 
     <Button
         android:id="@+id/mode_3_btn"
@@ -61,7 +62,8 @@
         android:text="@string/mode_3_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mode_2_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/mode_2_btn"
+        android:onClick="startMode3"/>
 
     <Button
         android:id="@+id/mode_4_btn"
@@ -71,7 +73,8 @@
         android:text="@string/mode_4_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mode_3_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/mode_3_btn"
+        android:onClick="startMode4"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

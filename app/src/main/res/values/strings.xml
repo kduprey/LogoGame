@@ -15,4 +15,9 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="header_text_1">Identify the Car Make</string>
+    <string name="header_text_2">Hints</string>
+    <string name="header_text_3">Identify the Car Image</string>
+    <string name="header_text_4">Advanced Level</string>
+    <string name="mode_1_img_descrip">Random Car</string>
 </resources>
