@@ -20,6 +20,11 @@
     <string name="header_text_3">Identify the Car Image</string>
     <string name="header_text_4">Advanced Level</string>
     <string name="mode_1_img_descrip">Random Car</string>
+    <string name="submit_btn_txt">Identify</string>
+
+    <string name="win_txt">CORRECT!</string>
+    <string name="lose_txt">INCORRECT!</string>
+
 
     <string-array name="models_array">
         <item>Audi</item>
