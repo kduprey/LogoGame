@@ -17,4 +17,75 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ran_img_1"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/ran_img1_descrip"
+        android:onClick="confirmSelection1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mode_1_header3"
+        app:srcCompat="@drawable/a1" />
+
+    <ImageView
+        android:id="@+id/ran_img_2"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/ran_img2_descrip"
+        android:onClick="confirmSelection2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mode_1_header3"
+        app:srcCompat="@drawable/a1" />
+
+    <ImageView
+        android:id="@+id/ran_img_3"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/ran_img3_descrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ran_img_1"
+        app:srcCompat="@drawable/a1"
+        android:onClick="confirmSelection3"/>
+
+    <TextView
+        android:id="@+id/find_model_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ran_img_3" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="resetMode"/>
+
+    <TextView
+        android:id="@+id/win_status_text_m3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/next_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/find_model_txt" />
 </androidx.constraintlayout.widget.ConstraintLayout>
