@@ -111,7 +111,7 @@ public class Mode1 extends AppCompatActivity implements AdapterView.OnItemSelect
 
     public void setStatus(boolean winStatus) {
        TextView x = findViewById(R.id.win_status_textview);
-       Button y = findViewById(R.id.submit_btn);
+       Button y = findViewById(R.id.identify_btn);
 
        //       If winStatus change color to green and display winning text
         if (winStatus) {
@@ -150,8 +150,8 @@ public class Mode1 extends AppCompatActivity implements AdapterView.OnItemSelect
         TextView y = findViewById(R.id.win_status_textview);
         y.setText("");
 
-        Button z = findViewById(R.id.submit_btn);
-        z.setText(R.string.submit_btn_txt);
+        Button z = findViewById(R.id.identify_btn);
+        z.setText(R.string.identify_btn_text);
         z.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

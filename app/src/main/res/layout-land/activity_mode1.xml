@@ -36,7 +36,7 @@
         android:id="@+id/model_list_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/submit_btn"
+        app:layout_constraintBottom_toTopOf="@+id/identify_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.676"
         app:layout_constraintStart_toEndOf="@+id/random_img"
@@ -44,11 +44,11 @@
         app:layout_constraintVertical_bias="0.696" />
 
     <Button
-        android:id="@+id/submit_btn"
+        android:id="@+id/identify_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="submitAnswer"
-        android:text="@string/submit_btn_txt"
+        android:text="@string/submit_btn_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.846"
