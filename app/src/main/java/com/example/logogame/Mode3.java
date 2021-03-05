@@ -6,6 +6,7 @@ import android.media.Image;
 import android.os.Bundle;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -27,6 +28,11 @@ public class Mode3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mode3);
+
+        Button x = findViewById(R.id.next_btn);
+
+        x.setClickable(false);
+        x.setBackgroundColor(getResources().getColor(R.color.disabled_purple));
 
         setRandomImage1();
         setRandomImage2();
@@ -113,6 +119,10 @@ public class Mode3 extends AppCompatActivity {
 
     public void setWinDisplay(boolean win) {
         TextView x = findViewById(R.id.win_status_text_m3);
+        Button y = findViewById(R.id.next_btn);
+
+        y.setClickable(true);
+        y.setBackgroundColor(getResources().getColor(R.color.purple_500));
 
         clearOnClick();
 
@@ -132,10 +142,7 @@ public class Mode3 extends AppCompatActivity {
         TextView x = findViewById(R.id.find_model_txt);
 
 
-        if (displayedModel1.equals(x.getText().toString()))
-            setWinDisplay(true);
-         else
-            setWinDisplay(false);
+        setWinDisplay(displayedModel1.equals(x.getText().toString()));
 
 
     }
@@ -143,19 +150,13 @@ public class Mode3 extends AppCompatActivity {
     public void confirmSelection2(View view) {
         TextView x = findViewById(R.id.find_model_txt);
 
-        if (displayedModel2.equals(x.getText().toString()))
-            setWinDisplay(true);
-        else
-            setWinDisplay(false);
+        setWinDisplay(displayedModel2.equals(x.getText().toString()));
     }
 
     public void confirmSelection3(View view) {
         TextView x = findViewById(R.id.find_model_txt);
 
-        if (displayedModel3.equals(x.getText().toString()))
-            setWinDisplay(true);
-        else
-            setWinDisplay(false);
+        setWinDisplay(displayedModel3.equals(x.getText().toString()));
     }
 
     public void clearOnClick() {
@@ -173,6 +174,10 @@ public class Mode3 extends AppCompatActivity {
         ImageView img1 = findViewById(R.id.ran_img_1);
         ImageView img2 = findViewById(R.id.ran_img_2);
         ImageView img3 = findViewById(R.id.ran_img_3);
+        Button y = findViewById(R.id.next_btn);
+
+        y.setClickable(false);
+        y.setBackgroundColor(getResources().getColor(R.color.disabled_purple));
 
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
