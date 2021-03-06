@@ -55,9 +55,8 @@ public class Mode2 extends AppCompatActivity {
         TextView x = findViewById(R.id.blank_car_name);
         blankString = "";
 
-        for (int i = 0; i < displayedModel.length(); i++) {
-            blankString += "-";
-        }
+        for (int i = 0; i < displayedModel.length(); i++)
+            blankString = blankString.concat("-");
         x.setText(blankString);
     }
 
@@ -97,35 +96,24 @@ public class Mode2 extends AppCompatActivity {
                     y.setText(displayedModel);
                     z.setText(R.string.win_txt);
                     z.setTextColor(getResources().getColor(R.color.winning_green));
-                    btn.setText(R.string.next);
-                    btn.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            y.setTextColor(getResources().getColor(R.color.black));
-                            z.setText("");
-
-                            resetMode();
-                            tries = 0;
-                        }
-                    });
                 } else {
                     System.out.println("Here 3");
                     z.setText(R.string.lose_txt);
                     z.setTextColor(getResources().getColor(R.color.losing_red));
                     y.setTextColor(getResources().getColor(R.color.car_model_yellow));
                     y.setText(displayedModel);
-                    btn.setText(R.string.next);
-                    btn.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            y.setTextColor(getResources().getColor(R.color.black));
-                            z.setText("");
-
-                            resetMode();
-                            tries = 0;
-                        }
-                    });
                 }
+                btn.setText(R.string.next);
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        y.setTextColor(getResources().getColor(R.color.black));
+                        z.setText("");
+
+                        resetMode();
+                        tries = 0;
+                    }
+                });
             }
         }
     }

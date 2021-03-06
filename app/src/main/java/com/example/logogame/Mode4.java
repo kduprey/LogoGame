@@ -36,7 +36,7 @@ public class Mode4 extends AppCompatActivity {
 
         TextView scoreTxt = findViewById(R.id.score_text);
 
-        scoreTxt.setText("Score: " + Integer.toString(score));
+        scoreTxt.setText("Score: " + score);
 
 
         setRandomImage1();
@@ -130,7 +130,7 @@ public class Mode4 extends AppCompatActivity {
                 input1.setTextColor(getResources().getColor(R.color.winning_green));
                 numCorrect++;
                 score++;
-                scoreTxt.setText("Score: " + Integer.toString(score));
+                scoreTxt.setText("Score: " + score);
                 if (numCorrect == 3) {
                     numCorrect = 0;
                     submitBtn.setText("Next");
@@ -165,7 +165,7 @@ public class Mode4 extends AppCompatActivity {
                 input2.setTextColor(getResources().getColor(R.color.winning_green));
                 numCorrect++;
                 score++;
-                scoreTxt.setText("Score: " + Integer.toString(score));
+                scoreTxt.setText("Score: " + score);
                 if (numCorrect == 3) {
                     numCorrect = 0;
                     submitBtn.setText("Next");
@@ -199,7 +199,7 @@ public class Mode4 extends AppCompatActivity {
                 input3.setTextColor(getResources().getColor(R.color.winning_green));
                 numCorrect++;
                 score++;
-                scoreTxt.setText("Score: " + Integer.toString(score));
+                scoreTxt.setText("Score: " + score);
                 if (numCorrect == 3) {
                     numCorrect = 0;
                     submitBtn.setText("Next");
