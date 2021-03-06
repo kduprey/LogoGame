@@ -56,7 +56,7 @@ public class Mode2 extends AppCompatActivity {
         blankString = "";
 
         for (int i = 0; i < displayedModel.length(); i++) {
-            blankString += "_";
+            blankString += "-";
         }
         x.setText(blankString);
     }

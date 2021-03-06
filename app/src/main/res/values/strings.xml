@@ -29,6 +29,7 @@
     <string name="ran_img1_descrip">random image 1</string>
     <string name="ran_img2_descrip">random image 2</string>
     <string name="ran_img3_descrip">random image 3</string>
+    <string name="enter_car_model_hint">Enter car model</string>
 
 
     <string-array name="models_array">

@@ -47,11 +47,11 @@
         android:id="@+id/ran_img_3"
         android:layout_width="175dp"
         android:layout_height="175dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="24dp"
         android:contentDescription="@string/ran_img3_descrip"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ran_img_1"
+        app:layout_constraintEnd_toStartOf="@+id/ran_img_2"
+        app:layout_constraintStart_toEndOf="@+id/ran_img_1"
+        app:layout_constraintTop_toBottomOf="@+id/mode_1_header4"
         app:srcCompat="@drawable/a1" />
 
     <EditText
@@ -99,7 +99,7 @@
         android:id="@+id/submit_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:onClick="checkSubmission"
         android:text="@string/submit_btn_text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -136,12 +136,14 @@
         android:id="@+id/car_model_txt_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
         android:textColor="@color/car_model_yellow"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/input_model_3"
-        app:layout_constraintEnd_toStartOf="@+id/input_model_3"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/car_model_txt_1"
+        app:layout_constraintEnd_toStartOf="@+id/submit_btn"
+        app:layout_constraintStart_toEndOf="@+id/car_model_txt_1" />
 
     <TextView
         android:id="@+id/score_text"
